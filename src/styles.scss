@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --color-primary: #FF0000;
+    --color-primary-dark: #CC0000;
+    --color-secondary: #FFDE00;
+    --color-secondary-dark:  #B3A125;
+    --corlor-blue: #3B4CCA; 
+}
+body {
+    display: flex;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+}

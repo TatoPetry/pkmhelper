@@ -1,0 +1,50 @@
+:host {
+  width: 100%;
+}
+.btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+
+    &.player1 {
+        background: black;
+        flex-direction: row-reverse;
+    }
+    &.player2 {
+        background: white;
+    }
+
+    .btn {
+        width: 60px;
+        height: 60px;        
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        outline: none;
+        font-weight: bold;
+        font-size: 1.2rem;
+        border: 2px solid white;
+        color: white;
+        transition: all 0.5s;
+        &.player1 {
+            background: white;
+            color: var(--color-primary-dark);
+            border: 2px solid var(--color-primary-dark);
+            transform: rotate(180deg);
+        }
+        &.player1:active {
+            background: var(--color-primary);
+        }
+        &.player2 {
+            background: white;
+            color: var(--corlor-blue);
+            border: 2px solid var(--corlor-blue);
+        }
+        &.player2:active {
+            background: var(--color-secondary);
+        }
+    }
+
+}

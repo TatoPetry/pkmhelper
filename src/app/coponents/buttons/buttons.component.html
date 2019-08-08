@@ -1,0 +1,6 @@
+<div class="btn-container {{ player }}">
+  <button 
+  (click)="click(button)" 
+  *ngFor="let button of buttons" 
+  class="btn {{ player }}">{{button ? '+' + button: button }}</button>
+</div>
